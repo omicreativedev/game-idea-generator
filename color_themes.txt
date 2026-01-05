@@ -1,0 +1,20 @@
+Monochromatic
+Sepia
+Pastel
+Rainbow
+Neon
+Natural
+Muted
+Jewel Toned
+Primary
+Warm Toned
+Cool Toned
+High Contrast
+Low Contrast
+Bold
+Bright
+Gradient
+Faded
+Saturated
+Vibrant
+Desaturated

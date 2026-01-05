@@ -1,0 +1,94 @@
+Action
+Adventure
+RPG
+Strategy
+Puzzle
+Simulation
+Horror
+Survival
+Runner
+Shooter
+Stealth
+Fighting
+Racing
+Matching
+Romance
+Storybook
+Boring
+Sports
+Rhythm
+Educational
+Maze
+Visual Novel
+MMO
+Open World
+Sandbox
+Roguelike
+Battle Royale
+Tower Defense
+Childlike
+Comfort
+Girly
+Card Game
+First-person Shooter
+Top-down Adventure
+Obby
+Side-scrolling
+Isometric
+2D Platformer
+3D Platformer
+Roguelite
+Souls-like
+Linear
+Procedural
+Turn-based
+Tactical
+Point-and-click
+Text-based
+VR
+AR
+Mixed Reality
+Dice-based
+Board Game
+Guessing Game
+Idle
+Clicker
+Incremental
+Management
+Tycoon
+City Builder
+Farming
+Life Sim
+Dating Sim
+Art Game
+Interactive Movie
+FMV
+Musical
+God Game
+4X
+Grand Strategy
+Wargame
+Hack and Slash
+Beat 'em Up
+Shoot 'em Up
+Fitness
+Meditation
+ASMR
+Relaxation
+Edutainment
+Language Learning
+Quiz
+Word Game
+Crossword
+Scrabble-like
+Hidden Object
+Bubbles
+Pinball
+Arcade
+Retro
+8-bit
+16-bit
+Sticker
+Meme
+Shitpost
+Post-apocalyptic

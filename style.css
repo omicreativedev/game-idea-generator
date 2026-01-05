@@ -1,0 +1,351 @@
+/* Reset and Base Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.4;
+	color: #333;
+	background-color: #f5f5f5;
+	padding: 20px;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	min-height: calc(100vh - 40px);
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header Styles */
+header {
+	text-align: center;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+h1 {
+	color: #333;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	color: #666;
+	font-size: 1.1rem;
+}
+
+/* Idea Display Section */
+.idea-display {
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	padding: 25px;
+	margin-bottom: 25px;
+	border: 1px solid #e0e0e0;
+}
+
+.game-idea {
+	font-size: 1.1rem;
+	line-height: 1.2;
+	text-align: center;
+	color: #333;
+}
+
+/* Term Styling - Minimal Grey Boxes */
+.term {
+	display: inline;
+	cursor: pointer;
+}
+
+.adjective,
+.noun,
+.genre,
+.vibe,
+.currency,
+.weapon,
+.art-style,
+.aesthetic,
+.mode,
+.harmony,
+.theme,
+.time,
+.place {
+	padding: 0px 2px;
+	border-radius: 3px;
+	margin: 2px;
+	display: inline-block;
+	font-weight: 600;
+	background-color: #e8e8e8;
+	color: #333;
+	border: 1px solid #ccc;
+	transition: all 0.2s ease;
+	font-size: 1.05em;
+	vertical-align: baseline;
+}
+
+.adjective:hover,
+.noun:hover,
+.genre:hover,
+.vibe:hover,
+.currency:hover,
+.weapon:hover,
+.art-style:hover,
+.aesthetic:hover,
+.mode:hover,
+.harmony:hover,
+.theme:hover,
+.time:hover,
+.place:hover {
+	background-color: #d8d8d8;
+}
+
+.frozen {
+	background-color: #d0d0d0 !important;
+	position: relative;
+	padding-right: 20px;
+}
+
+.frozen::after {
+	content: "❄️";
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.7rem;
+}
+
+/* Color Styling */
+.color {
+	padding: 2px 8px;
+	border-radius: 3px;
+	margin: 0 2px;
+	display: inline-block;
+	font-weight: 600;
+	color: #333;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	transition: all 0.2s ease;
+	font-size: 1.05em;
+	vertical-align: baseline;
+}
+
+.color:hover {
+	filter: brightness(90%);
+}
+
+.frozen.color {
+	position: relative;
+	padding-right: 20px;
+}
+
+.frozen.color::after {
+	content: "❄️";
+	position: absolute;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.7rem;
+	color: #333;
+	text-shadow: 0 0 2px white;
+}
+
+/* Controls Section */
+.controls-container {
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 25px;
+	border: 1px solid #e0e0e0;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-weight: 600;
+	color: white;
+}
+
+.btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.generate-btn {
+	background-color: #666;
+}
+
+.generate-btn:hover {
+	background-color: #555;
+}
+
+.reset-btn {
+	background-color: #888;
+}
+
+.reset-btn:hover {
+	background-color: #777;
+}
+
+/* Legend and Frozen Terms Sections */
+.legend,
+.frozen-terms {
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 25px;
+	border: 1px solid #e0e0e0;
+}
+
+.legend h3,
+.frozen-terms h3 {
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.legend ul {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.legend li {
+	margin-bottom: 8px;
+}
+
+.frozen-indicator {
+	color: #666;
+}
+
+/* Frozen Terms List */
+#frozen-list {
+	min-height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
+
+.frozen-term-item {
+	background-color: #e8e8e8;
+	border-radius: 4px;
+	padding: 6px 12px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	border: 1px solid #ccc;
+	font-size: 0.9rem;
+}
+
+.no-frozen {
+	color: #888;
+	font-style: italic;
+	text-align: center;
+	width: 100%;
+}
+
+/* Footer */
+footer {
+	margin-top: auto;
+	text-align: center;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+	color: #666;
+	font-size: 0.9rem;
+}
+
+footer p {
+	margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.container {
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.game-idea {
+		font-size: 1.1rem;
+	}
+
+	.controls {
+		flex-direction: column;
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	.adjective,
+	.noun,
+	.genre,
+	.vibe,
+	.currency,
+	.weapon,
+	.art-style,
+	.aesthetic,
+	.mode,
+	.color,
+	.harmony,
+	.theme,
+	.time,
+	.place {
+		padding: 2px 6px;
+		margin: 0 1px;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		padding: 10px;
+	}
+
+	.game-idea {
+		font-size: 1rem;
+	}
+
+	.adjective,
+	.noun,
+	.genre,
+	.vibe,
+	.currency,
+	.weapon,
+	.art-style,
+	.aesthetic,
+	.mode,
+	.color,
+	.harmony,
+	.theme,
+	.time,
+	.place {
+		padding: 1px 4px;
+		font-size: 0.95em;
+	}
+
+	.frozen::after {
+		right: 3px;
+		font-size: 0.6rem;
+	}
+}

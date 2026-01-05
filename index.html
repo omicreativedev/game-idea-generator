@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Idea Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Game Idea Generator</h1>
+            <p class="subtitle">Generate unique game concepts with a click!</p>
+        </header>
+
+        <main>
+            <div class="idea-display">
+                <p class="game-idea">
+                    A game about a
+                    <span class="term">
+                        <span class="adjective" data-type="adjective" data-role="main">&nbsp;</span>
+                        <span class="noun" data-type="noun" data-role="main">&nbsp;</span>
+                    </span>
+                    and a
+                    <span class="term">
+                        <span class="adjective" data-type="adjective" data-role="secondary">&nbsp;</span>
+                        <span class="noun" data-type="noun" data-role="secondary">&nbsp;</span>
+                    </span>
+                    with friends of
+                    <span class="term">
+                        <span class="adjective" data-type="adjective" data-role="friends">&nbsp;</span>
+                        <span class="noun" data-type="noun" data-role="friends">&nbsp;</span>
+                    </span>
+                    and enemies of
+                    <span class="term">
+                        <span class="adjective" data-type="adjective" data-role="enemies">&nbsp;</span>
+                        <span class="noun" data-type="noun" data-role="enemies">&nbsp;</span>
+                    </span>
+                    and a final boss of
+                    <span class="term">
+                        <span class="adjective" data-type="adjective" data-role="boss">&nbsp;</span>
+                        <span class="noun" data-type="noun" data-role="boss">&nbsp;</span>
+                    </span>.<br /><br />
+
+                    The vibe is
+                    <span class="term">
+                        <span class="vibe" data-type="vibe" data-role="vibe">&nbsp;</span>
+                    </span>.
+                    The currency is
+                    <span class="term">
+                        <span class="currency" data-type="currency" data-role="currency">&nbsp;</span>
+                    </span>.
+                    The main weapon is
+                    <span class="term">
+                        <span class="weapon" data-type="weapon" data-role="weapon">&nbsp;</span>
+                    </span>.<br /><br />
+
+                    It is set in the
+                    <span class="term">
+                        <span class="time" data-type="time" data-role="time">&nbsp;</span>
+                    </span>
+                    and
+                    <span class="term">
+                        <span class="place" data-type="place" data-role="place">&nbsp;</span>
+                    </span>.<br /><br />
+                    The primary genre is
+                    <span class="term">
+                        <span class="genre" data-type="genre" data-role="primary">&nbsp;</span>
+                    </span>
+                    and the secondary is
+                    <span class="term">
+                        <span class="genre" data-type="genre" data-role="secondary">&nbsp;</span>
+                    </span>.<br /><br />
+                    The primary color is
+                    <span class="term">
+                        <span class="color" data-type="color" data-role="primary">&nbsp;</span>
+                    </span>
+                    and the secondary is
+                    <span class="term">
+                        <span class="color" data-type="color" data-role="secondary">&nbsp;</span>
+                    </span>.<br />
+                    The color harmony is
+                    <span class="term">
+                        <span class="harmony" data-type="harmony" data-role="harmony">&nbsp;</span>
+                    </span>
+                    and the color theme is
+                    <span class="term">
+                        <span class="theme" data-type="theme" data-role="theme">&nbsp;</span>
+                    </span>.<br /><br />
+                    The art style is
+                    <span class="term">
+                        <span class="art-style" data-type="art-style" data-role="art-style">&nbsp;</span>
+                    </span>
+                    and
+                    <span class="term">
+                        <span class="aesthetic" data-type="aesthetic" data-role="aesthetic">&nbsp;</span>
+                    </span>
+                    in
+                    <span class="term">
+                        <span class="mode" data-type="mode" data-role="mode">&nbsp;</span>
+                    </span>
+                    mode.
+                </p>
+            </div>
+
+            <div class="controls-container">
+                <div class="controls">
+                    <button id="generate-btn" class="btn generate-btn">
+                        Generate New Idea
+                    </button>
+                    <button id="reset-btn" class="btn reset-btn">
+                        Reset All
+                    </button>
+                </div>
+            </div>
+
+            <div class="legend">
+                <h3>How to Use</h3>
+                <ul>
+                    <li>Click <strong>Generate New Idea</strong> to randomly generate game concepts</li>
+                    <li>Click on any term to freeze/unfreeze it</li>
+                    <li>Frozen terms won't change when you generate new ideas</li>
+                    <li>Click <strong>Reset All</strong> to unfreeze all terms</li>
+                    <li>Colors can be researched at <a
+                            href="https://htmlcolorcodes.com/color-wheel/">htmlcolorcodes.com</a></li>
+                </ul>
+                <p class="frozen-indicator">❄️ = Frozen term</p>
+            </div>
+
+            <div class="frozen-terms">
+                <h3>Currently Frozen Terms</h3>
+                <div id="frozen-list">
+                    <p class="no-frozen">No frozen terms yet. Click on any term above to freeze it!</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Game Idea Generator &copy; <span id="current-year">2023</span></p>
+            <p>Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
